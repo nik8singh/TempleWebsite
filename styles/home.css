@@ -1,0 +1,11 @@
+.image_box{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin:20px 0;
+}
+.image_box img{
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+}
