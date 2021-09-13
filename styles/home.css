@@ -9,3 +9,126 @@
     width: 100%;
     height: auto;
 }
+
+#important_message{
+    color: darkred;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.hours_events_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-top: #373636 1px solid;
+    padding: 20px;
+}
+
+
+h2{
+    font-size: large;
+    color: #373636;
+    margin: 10px;
+}
+
+#hours{
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1
+}
+
+.sub_header{
+    color: #373636;
+    font-weight: bold;
+    margin: 0 20px 0 0;
+    min-width: 100px;
+}
+
+.timing{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+#events{
+    order: 2;
+    min-width: 400px;
+    /*max-width: 400px;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 2;
+}
+
+.event_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.event_note{
+    margin: 0 5px;
+    word-wrap: break-word;
+}
+
+.content_section{
+    display: flex;
+    /*border-top: #373636 1px solid;*/
+    padding: 20px 0;
+    margin-top: 20px;
+    flex-direction: column;
+
+}
+.section_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-size: xx-large;
+    color: #2df6f6;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    background-color: #373636;
+}
+
+.cards_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    max-height: 500px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.card img{
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.card a{
+    text-decoration: underline;
+    color: darkred;
+}
+
+.card p{
+    text-align: center;
+}
