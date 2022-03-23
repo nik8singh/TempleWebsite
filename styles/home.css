@@ -3,18 +3,55 @@
     align-items: center;
     display: flex;
     margin:20px 0;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+
 }
+
+.image_box h1{
+    font-size: xxx-large
+}
+
+.image_box p{
+    font-size: large
+}
+
+
 .image_box img{
     max-width: 1200px;
     width: 100%;
     height: auto;
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px #000000;
+}
+
 #important_message{
     color: darkred;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-size: large;
+}
+
+#featured_buttons{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#featured_buttons a{
+    min-width: 200px;
+    max-width: 200px;
+    text-align: center;
 }
 
 .hours_events_wrapper{
@@ -31,8 +68,9 @@
 
 h2{
     font-size: large;
-    color: #373636;
+    /*color: #373636;*/
     margin: 10px;
+    color: #005354;
 }
 
 #hours{
@@ -80,26 +118,6 @@ h2{
     word-wrap: break-word;
 }
 
-.content_section{
-    display: flex;
-    /*border-top: #373636 1px solid;*/
-    padding: 20px 0;
-    margin-top: 20px;
-    flex-direction: column;
-
-}
-.section_header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    font-size: xx-large;
-    color: #2df6f6;
-    margin-bottom: 20px;
-    padding: 20px 0;
-    background-color: #373636;
-}
-
 .cards_wrapper{
     display: flex;
     flex-direction: row;
@@ -131,4 +149,15 @@ h2{
 
 .card p{
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .image_box h1{
+        font-size: x-large;
+    }
+
+    #important_message{
+        align-items: center;
+    }
+
 }
