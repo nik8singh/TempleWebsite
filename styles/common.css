@@ -82,6 +82,7 @@ a {
     transition-duration: 0.4s;
     cursor: pointer;
     text-decoration: none;
+    text-shadow: none;
 }
 
 .button1:hover{
@@ -95,6 +96,7 @@ a {
     padding: 20px 0;
     margin-top: 20px;
     flex-direction: column;
+
 }
 
 .section_header{
@@ -107,15 +109,25 @@ a {
     margin-bottom: 20px;
     padding: 20px 0;
     background-color: #373636;
+
 }
 /* ---------------------------------------------------
     HEADER
 ----------------------------------------------------- */
 
 #logo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-grow: 2;
     padding-top: 10px;
     font-size: xx-large;
+}
+
+#logo p{
+    font-size: 15px;
 }
 
 #menuButton {

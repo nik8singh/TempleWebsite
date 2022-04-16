@@ -23,17 +23,17 @@
     width: 100%;
     max-width: 300px;
     height: auto;
-    border: 10px groove #806E0F;
+    border: 10px groove #474747;
 }
 
-.bottom-left {
+.bottom-center {
     position: absolute;
     bottom: 8px;
-    left: 80px;
+    left: 150px;
     transform: translate(-50%, -50%);
     /*text-shadow: 2px 2px #000000;*/
     font-size: small;
-    background-color: #6b6969;
+    background-color: #444444;
     padding: 0 10px;
 }
 

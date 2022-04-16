@@ -34,11 +34,9 @@
 }
 
 #important_message{
-    color: darkred;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: darkgreen;
     font-size: large;
+    order: 2;
 }
 
 #featured_buttons{
@@ -58,9 +56,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: space-around;
-    justify-content: space-between;
-    margin-top: 50px;
+    justify-content:  space-evenly;
+    margin-top: 10px;
     border-top: #373636 1px solid;
     padding: 20px;
 }
@@ -78,7 +75,6 @@ h2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex-grow: 1
 }
 
 .sub_header{
