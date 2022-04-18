@@ -13,6 +13,11 @@
     margin: 20px;
     border: rgba(0, 0, 0, 0.15) 1px solid;
 }
+.missingService{
+    border: rgba(255, 0, 0, 0.98) 2px solid!important;
+    background-color: rgba(255, 0, 0, 0.23);
+
+}
 
 #services_table table{
     min-width: inherit;
@@ -31,13 +36,15 @@ tr:first-child{
     top: -1px;
 }
 
-tr:not(:first-child){
-}
-
 tr:not(:first-child):hover td{
     background-color: #000b31;
     color: #2df6f6;
     cursor: pointer;
+}
+
+.selectedService{
+    background-color: #002a02;
+    color: #2df6f6;
 }
 
 .selectedTR{
@@ -49,10 +56,11 @@ td{
     margin: 0;
 }
 
-#services_form{
+#services_form_div{
     margin: 20px;
 }
-#services_form form{
+
+#services_form{
     min-width: 400px;
     display: flex;
     flex-direction: column;
@@ -65,19 +73,35 @@ form input, textarea{
     margin: 10px 10px 10px 0;
 }
 
-form input[type=submit]{
+.active-submit{
     background-color: black;
     color: white;
     font-weight: bold;
     border: black 3px solid;
 }
 
-form input[type=submit]:hover{
+.active-submit:hover{
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
+.inactive-submit{
+    background-color: grey;
+    color: white;
+}
+.errorMessage{
+    color: red;
+}
+.successMessage{
+    color: green;
+}
+
+span{
+    font-size: small;
+    color: darkred;
+    margin-left: 10px;
+}
 
 @media only screen and (max-width: 600px) {
 

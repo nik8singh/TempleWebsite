@@ -35,30 +35,31 @@
                             <th>Select Service</th>
                             <th>Price ₹ </th>
                         </tr>
-                        <tr>
+                        <tr class="serviceItem">
                             <td>Pooja</td>
                             <td>Depends on the <br>type of pooja</td>
                         </tr>
                     </table>
                 </div>
-                <div id="services_form">
-                    <form>
-                        <label for="fname">First name:</label>
+                <div id="services_form_div">
+                    <form id="services_form">
+                        <label for="fname">First name:<span>(required)</span></label>
                         <input type="text" id="fname" name="fname" required>
 
-                        <label for="lname">Last name:</label>
+                        <label for="lname">Last name:<span>(required)</span></label>
                         <input type="text" id="lname" name="lname" required>
 
-                        <label for="tel">Phone number:</label>
+                        <label for="tel">Phone number:<span>(required)</span></label>
                         <input type="text" id="tel" name="tel" required>
 
-                        <label for="email">Email:</label>
-                        <input type="text" id="email" name="email" >
+                        <label for="email">Email:<span>(required)</span></label>
+                        <input type="text" id="email" name="email" required>
 
-                        <label for="message">Additional Information:</label>
+                        <label for="message">Additional Information:<span>(required)</span></label>
                         <textarea name="message" id="message" rows="10" cols="30" placeholder="Enter request details" required></textarea>
 
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" class="active-submit">
+                        <p id="NotificationMessage"></p>
                     </form>
 
                 </div>
@@ -72,8 +73,9 @@
 
 
 
-<footer class="" id="footer"></footer>
+<footer class="footer" id="footer"></footer>
 
 <script src="scripts/common.js" type="module"></script>
+<script src="scripts/service.js" type="module"></script>
 </body>
 </html>

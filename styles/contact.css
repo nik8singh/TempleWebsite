@@ -1,5 +1,5 @@
 
-#contact_form form{
+#contact_form{
     min-width: 400px;
     display: flex;
     flex-direction: column;
@@ -24,4 +24,9 @@ form input[type=submit]:hover{
     background-color: white;
     color: black;
     cursor: pointer;
+}
+span{
+    font-size: small;
+    color: darkred;
+    margin-left: 10px;
 }

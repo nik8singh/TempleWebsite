@@ -239,6 +239,19 @@ a {
     background-color: #373636;
     color: white;
     margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#footer a{
+    text-decoration: underline #00b3f1 ;
+    color: #2df6f6;
+}
+#impLinks{
+    display: flex;
+    flex-direction: column;
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
