@@ -58,10 +58,11 @@ td{
 
 #services_form_div{
     margin: 20px;
+    min-width: 50%;
 }
 
 #services_form{
-    min-width: 400px;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -103,23 +104,23 @@ span{
     margin-left: 10px;
 }
 
+
+@media (max-width: 740px) {
+
+    #services_form{
+        width: 80% !important;
+        justify-content: center;
+    }
+    #services_form_div{
+        min-width: 80% !important;
+        margin: 0!important;
+    }
+}
+
 @media only screen and (max-width: 600px) {
 
     #services_table{
         max-height: 300px;
         overflow:auto;
     }
-}
-
-@media only screen and (max-width: 400px) {
-
-    #services_table,#services_form_div, input, textarea {
-        width: 360px;
-    }
-    #services_form{
-        width: 360px;
-        justify-content: center;
-    }
-
-
 }
