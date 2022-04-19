@@ -55,13 +55,19 @@
 .hours_events_wrapper{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content:  space-evenly;
     margin-top: 10px;
     border-top: #373636 1px solid;
     padding: 20px;
 }
 
+#hours{
+    order: 1;
+}
+
+#important_message{
+    order: 2;
+}
 
 h2{
     font-size: large;
@@ -155,5 +161,21 @@ h2{
     #important_message{
         align-items: center;
     }
+
+}
+
+@media (max-width: 480px) {
+
+    #important_message{
+        margin: 20px 0 20px 0;
+        order: 1;
+    }
+    .hours_events_wrapper{
+       flex-direction: row-reverse;
+    }
+    #hours{
+        order: 2;
+    }
+
 
 }

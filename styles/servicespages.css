@@ -109,6 +109,17 @@ span{
         max-height: 300px;
         overflow:auto;
     }
+}
+
+@media only screen and (max-width: 400px) {
+
+    #services_table,#services_form_div, input, textarea {
+        width: 360px;
+    }
+    #services_form{
+        width: 360px;
+        justify-content: center;
+    }
 
 
 }

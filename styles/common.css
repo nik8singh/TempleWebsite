@@ -326,16 +326,17 @@ a {
         margin-top: 20px;
     }
 
+    #logo {
+        font-size: xx-large;
+    }
+
 }
 
 
 @media (max-width: 740px) {
-    #events{
-        margin-top: 50px;
-    }
 
-    #logo {
-        font-size: large;
+    .section_header{
+        font-size: x-large;
     }
 }
 
@@ -346,17 +347,25 @@ a {
         width: 100% !important;
         height: auto;
     }
-
-
-
 }
 
 @media (max-width: 480px) {
 
-
-    #events{
-        max-width: 350px;
-        min-width: 350px!important;
+    #logo {
+        font-size: x-large;
     }
+
+    .section_header{
+        font-size: large;
+    }
+
+    #footer{
+        flex-direction: column;
+    }
+
+    #footer div{
+        margin-top: 20px;
+    }
+
 
 }
