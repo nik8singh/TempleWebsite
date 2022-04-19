@@ -2,12 +2,19 @@
 $(document).ready(function () {
     $.get("header.html", function (data) {
         $('body').prepend(data);
+        let currentPage = $(location).attr('href');
+        $(".selectedPage").removeClass("selectedPage");
+        currentPage = /[^/]*$/.exec(currentPage)[0];
+        currentPage = currentPage.slice(0, currentPage.indexOf('.'));
+        console.log("." + currentPage + "Nav");
+        $("." + currentPage + "Nav").parent('li').addClass('selectedPage');
     });
     $('#footer').load('footer.html');
     const scale = 'scale(1)';
     document.body.style.webkitTransform = scale;    // Chrome, Opera, Safari
     document.body.style.msTransform = scale;       // IE 9
     document.body.style.transform = scale;     // General
+
 });
 
 $(document).on("click", "#menuButton", function (e) {

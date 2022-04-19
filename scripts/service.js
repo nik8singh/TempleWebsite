@@ -1,4 +1,5 @@
 let serviceSelected = false;
+
 $("td").click(function() {
     let parent_tr = $(this).closest('tr');
 

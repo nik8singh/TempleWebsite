@@ -114,7 +114,17 @@ a {
 /* ---------------------------------------------------
     HEADER
 ----------------------------------------------------- */
+.selectedPage{
+    border-bottom: rgb(0, 175, 175) 3px solid!important;
+    color: #009483;
+    font-weight: bold;
+}
 
+
+
+#logoHeader{
+    display: flex;
+}
 #logo {
     display: flex;
     flex-wrap: wrap;
@@ -311,13 +321,21 @@ a {
         margin-top: 50px!important;
     }
 
+    .selectedPage{
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
 }
 
 
 @media (max-width: 740px) {
     #events{
         margin-top: 50px;
+    }
 
+    #logo {
+        font-size: large;
     }
 }
 
@@ -328,6 +346,7 @@ a {
         width: 100% !important;
         height: auto;
     }
+
 
 
 }
